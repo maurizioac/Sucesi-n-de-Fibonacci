@@ -1,0 +1,71 @@
+/* Fondo general cálido y ordenado */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe5b4 0%, #ffd6d6 100%);
+    min-height: 100vh;
+}
+
+/* Contenedor principal centrado y ordenado */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff8f0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+h1, h2, h3 {
+    color: #d2691e;
+    text-align: center;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Botones con colores cálidos y efecto hover */
+button, .btn {
+    background: linear-gradient(90deg, #ffb347 0%, #ff7f50 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 183, 77, 0.15);
+    transition: background 0.3s, transform 0.2s;
+    margin: 8px;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(90deg, #ff7f50 0%, #ffb347 100%);
+    transform: scale(1.05);
+}
+
+/* Orden visual para formularios y secciones */
+form, section {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(255, 183, 77, 0.08);
+}
+
+label {
+    color: #d2691e;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    border: 1px solid #ffd6a0;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    width: 100%;
+    font-size: 1rem;
+}
