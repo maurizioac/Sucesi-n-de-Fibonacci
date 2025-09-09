@@ -5,30 +5,40 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #ffe5b4 0%, #ffd6d6 100%);
     min-height: 100vh;
-    /* Nuevas reglas para centrar el contenido */
-    display: flex; /* Habilita el modelo de caja flexible */
-    justify-content: center; /* Centra los elementos hijos horizontalmente */
-    align-items: center; /* Centra los elementos hijos verticalmente */
 }
 
 /* Contenedor principal centrado y ordenado */
 .container {
     max-width: 900px;
+    margin: 40px auto;
     background: #fff8f0;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     border-radius: 16px;
     padding: 32px;
-    /* La regla 'margin: 40px auto;' ya no es necesaria con el nuevo centrado del body */
+    text-align: center; /* Centra el texto y los elementos inline-block */
 }
 
 h1, h2, h3 {
     color: #d2691e;
-    text-align: center;
+    text-align: center; /* Asegura que los títulos estén centrados */
 }
 
 p {
     color: #444;
     line-height: 1.6;
+}
+
+/* Contenedor para alinear el input y el botón */
+.input-group {
+    display: flex; /* Utiliza Flexbox para alinear el input y el botón */
+    justify-content: center; /* Centra el grupo de elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 10px; /* Agrega un espacio entre el input y el botón */
+    margin: 20px 0; /* Espaciado arriba y abajo del grupo */
+}
+
+input[type="number"] {
+    width: 150px; /* Ajusta el ancho para que no ocupe todo el espacio */
 }
 
 /* Botones con colores cálidos y efecto hover */
@@ -42,7 +52,6 @@ button, .btn {
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(255, 183, 77, 0.15);
     transition: background 0.3s, transform 0.2s;
-    margin: 8px;
 }
 
 button:hover, .btn:hover {
@@ -70,6 +79,11 @@ input, select, textarea {
     padding: 8px;
     margin-top: 6px;
     margin-bottom: 12px;
-    width: 100%;
     font-size: 1rem;
+}
+
+/* Estilo para el resultado */
+#resultado {
+    font-weight: bold;
+    color: #ff7f50;
 }
